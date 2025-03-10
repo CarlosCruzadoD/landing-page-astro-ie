@@ -1,0 +1,30 @@
+---
+import logo from '../assets/logo-ie.png'
+import logoArzo from '../assets/arzobispado.png'
+---
+<header class="fixed top-0 right-0 w-full shadow-md bg-white">
+    <div class="flex ju w-full justify-between max-w-350 m-auto p-2">
+        <div class="flex items-center">
+            <div class="w-15 flex mr-3">
+                <img src={logo.src} alt="">
+            </div>
+            <div class="w-15 flex mr-3">
+                <img src={logoArzo.src} alt="">
+            </div>
+            
+        </div>
+        <div class="p-1">
+            <ul class="flex gap-10">
+                <li>
+                    <a href="#home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#education">Educación</a>
+                </li>
+                <li>
+                    <a class="text-white font-bold tracking-wider py-4 px-7 bg-[#fac72e] rounded-full hover:scale-105" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

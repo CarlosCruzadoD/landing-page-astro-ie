@@ -1,0 +1,29 @@
+---
+const {nivel, content, classImage, dir} = Astro.props
+---
+{ 
+    dir == "r" ? (
+        <div class="flex flex-wrap w-full justify-center">
+            <div class=`${classImage} image-nivel w-1/2`></div>
+            <div class="w-1/2 min-w-[320px] flex flex-col justify-center items-start p-20">
+                <h3 class="text-4xl font-bold uppercase text-[#17bdcc] mb-2">{nivel}</h3>
+                <span class="prose prose-xl text-start">
+                    {content}
+                </span>
+            </div>
+        </div>
+        
+    ):
+    (
+        <div class="flex flex-wrap-reverse w-full justify-center">
+            <div class="w-1/2 min-w-[320px] flex flex-col justify-center items-start p-20">
+                <h3 class="text-4xl font-bold uppercase text-[#17bdcc] mb-2">{nivel}</h3>
+                <span class="prose prose-xl text-start">
+                    {content}
+                </span>
+            </div>
+            <div class=`${classImage} image-nivel w-1/2`></div>
+        </div>
+    )
+}
+

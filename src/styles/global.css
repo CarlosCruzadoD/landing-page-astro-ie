@@ -1,0 +1,112 @@
+@import 'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+header li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home{
+    background: url('../assets/nsdm-background.jpg');
+    background-position: 550px;
+    background-size: contain;
+}
+.background-cover{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 55%, rgba(0,0,0,0) 100%);
+}
+#contact{
+    background: url('../assets/background-footer.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.img-inicial{
+    background: url('../assets/inicial.jpg') ;
+}
+.img-primaria{
+    background: url('../assets/primaria.jpg') ;
+}
+.img-secundaria{
+    background: url('../assets/secundaria.jpg') ;
+}
+.image-nivel{
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+    gap:5px
+}
+.form-group > input,.form-group > textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.169);
+    box-shadow: 1px 2px 5px 2px #f4f4f4;
+}
+.source li{
+    display: flex;
+}
+.source li svg{
+    margin-right: 10px;
+}
+.source{
+    text-align: center;
+    padding: 60px 10px;
+    display: flex;
+    justify-content: center;
+}
+.svg-source{
+    width: 50%;
+    min-width: 400px;
+    padding: 70px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.svg-source img{
+    height: 100%;
+}
+.info-source{
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+}
+.info-footer > span{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.info-footer svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-nivel{
+        width: 90%;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+    .svg-source{
+        padding: 0;
+    }
+    .info-source > div{
+        padding: 1px;
+    }
+    #contact > div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+  }
